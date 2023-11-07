@@ -26,7 +26,6 @@ personal_info = {
     "Location": "Your City, Country",
     "Summary": "Brief summary about yourself."
 }
-st.sidebar.image("path_to_your_image.jpg", width=100) # Replace with your image path
 for key, value in personal_info.items():
     st.sidebar.write(f"**{key}:** {value}")
 
@@ -57,7 +56,7 @@ projects = {
 for project, description in projects.items():
     if st.button(project):
         st.write(description)
-        progress = st.slider("Project Completion", 0, 100, 50)
+        progress = st.slider(f"Project Completion - {project}", 0, 100, 50)
         st.progress(progress)
 
 # Publications/Research
