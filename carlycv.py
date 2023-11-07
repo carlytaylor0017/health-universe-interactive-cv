@@ -1,6 +1,6 @@
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-css_file = current_dir / "styles" / "main.css"
+css_file = current_dir / "main.css"
 resume_file = current_dir / "carly_taylor_example_resume.pdf" 
 profile_pic = current_dir / "headshot.jpg"
 
